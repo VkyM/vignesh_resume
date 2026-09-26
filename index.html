@@ -1,451 +1,639 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vignesh M - DevOps Engineer Resume</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
-    @page {
-        size: A4;
-        margin: 10mm 12mm;
-    }
+    <title>Vignesh M - DevOps | SRE | Linux | AI/MLOps</title>
 
-    * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-    }
+    <style>
+        @page {
+            size: A4;
+            margin: 10mm 12mm;
+        }
 
-    body {
-        font-family: Arial, Helvetica, sans-serif;
-        color: #222;
-        background: #e9e9e9;
-        font-size: 10.2pt;
-        line-height: 1.35;
-    }
+        * {
+            box-sizing: border-box;
+        }
 
-    .resume {
-        width: 210mm;
-        min-height: 297mm;
-        margin: 18px auto;
-        padding: 12mm 13mm;
-        background: #fff;
-    }
-
-    /* Header */
-    .header {
-        border-bottom: 2px solid #1f4e79;
-        padding-bottom: 9px;
-        margin-bottom: 10px;
-    }
-
-    .name {
-        font-size: 24pt;
-        font-weight: 700;
-        color: #17365d;
-        letter-spacing: 0.2px;
-    }
-
-    .role {
-        margin-top: 2px;
-        font-size: 12.5pt;
-        font-weight: 700;
-        color: #1f4e79;
-    }
-
-    .contact {
-        margin-top: 6px;
-        font-size: 9.2pt;
-        color: #333;
-        line-height: 1.55;
-    }
-
-    .contact a {
-        color: #333;
-        text-decoration: none;
-    }
-
-    /* Sections */
-    .section {
-        margin-top: 10px;
-    }
-
-    .section-title {
-        font-size: 11.5pt;
-        color: #17365d;
-        font-weight: 700;
-        text-transform: uppercase;
-        letter-spacing: 0.7px;
-        border-bottom: 1px solid #b7c9d6;
-        padding-bottom: 3px;
-        margin-bottom: 6px;
-    }
-
-    .summary {
-        font-size: 10pt;
-        text-align: left;
-    }
-
-    /* Skills */
-    .skills {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        column-gap: 22px;
-        row-gap: 3px;
-    }
-
-    .skill-row {
-        font-size: 9.6pt;
-    }
-
-    .skill-row strong {
-        color: #17365d;
-    }
-
-    /* Experience */
-    .job {
-        margin-bottom: 9px;
-    }
-
-    .job:last-child {
-        margin-bottom: 0;
-    }
-
-    .job-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: baseline;
-        gap: 12px;
-    }
-
-    .job-title {
-        font-size: 10.8pt;
-        font-weight: 700;
-        color: #222;
-    }
-
-    .company {
-        color: #1f4e79;
-    }
-
-    .date {
-        font-size: 9.2pt;
-        color: #555;
-        white-space: nowrap;
-        font-weight: 600;
-    }
-
-    .bullets {
-        margin-top: 3px;
-        padding-left: 17px;
-    }
-
-    .bullets li {
-        margin-bottom: 2.5px;
-        padding-left: 2px;
-    }
-
-    /* Projects */
-    .project {
-        margin-bottom: 5px;
-    }
-
-    .project:last-child {
-        margin-bottom: 0;
-    }
-
-    .project-title {
-        font-weight: 700;
-        color: #17365d;
-    }
-
-    /* Education / Certifications */
-    .two-column {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 24px;
-    }
-
-    .item {
-        margin-bottom: 4px;
-    }
-
-    .item-title {
-        font-weight: 700;
-    }
-
-    .muted {
-        color: #555;
-        font-size: 9.3pt;
-    }
-
-    /* Print */
-    @media print {
         body {
-            background: #fff;
+            margin: 0;
+            padding: 0;
+            background: #eeeeee;
+            color: #222222;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 10pt;
+            line-height: 1.4;
         }
 
         .resume {
-            width: auto;
-            min-height: auto;
-            margin: 0;
-            padding: 0;
+            width: 210mm;
+            max-width: 210mm;
+            min-height: 297mm;
+            margin: 18px auto;
+            padding: 10mm 12mm;
+            background: #ffffff;
         }
 
-        a {
-            color: #222;
+        header {
+            border-bottom: 2px solid #17365d;
+            padding-bottom: 8px;
+            margin-bottom: 11px;
         }
-    }
-</style>
+
+        h1 {
+            margin: 0;
+            color: #17365d;
+            font-size: 23pt;
+            line-height: 1.1;
+            letter-spacing: 0.2px;
+        }
+
+        .headline {
+            margin-top: 4px;
+            color: #1f4e79;
+            font-size: 11pt;
+            font-weight: bold;
+        }
+
+        .contact {
+            margin-top: 6px;
+            font-size: 8.8pt;
+            line-height: 1.5;
+        }
+
+        .contact a {
+            color: #222222;
+            text-decoration: none;
+        }
+
+        section {
+            margin-top: 10px;
+        }
+
+        h2 {
+            margin: 0 0 6px 0;
+            padding-bottom: 3px;
+            border-bottom: 1px solid #b7c9d6;
+            color: #17365d;
+            font-size: 10.8pt;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        h3 {
+            margin: 0;
+            font-size: 10pt;
+            color: #222222;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        .summary {
+            font-size: 9.4pt;
+            text-align: justify;
+        }
+
+        .skills {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .skills li {
+            margin-bottom: 3px;
+            font-size: 9.2pt;
+        }
+
+        .skills strong {
+            color: #17365d;
+        }
+
+        .job {
+            margin-bottom: 9px;
+            page-break-inside: avoid;
+        }
+
+        .job-header {
+            margin-bottom: 3px;
+        }
+
+        .job-title {
+            font-weight: bold;
+            font-size: 10pt;
+        }
+
+        .company {
+            color: #1f4e79;
+        }
+
+        .date {
+            float: right;
+            color: #555555;
+            font-size: 9pt;
+            font-weight: bold;
+        }
+
+        .job-header::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        ul {
+            margin-top: 3px;
+            margin-bottom: 0;
+            padding-left: 17px;
+        }
+
+        li {
+            margin-bottom: 2px;
+            font-size: 9.2pt;
+        }
+
+        .project {
+            margin-bottom: 7px;
+            page-break-inside: avoid;
+        }
+
+        .project-title {
+            font-weight: bold;
+            color: #17365d;
+            font-size: 9.5pt;
+        }
+
+        .project-tech {
+            margin-top: 1px;
+            margin-bottom: 2px;
+            font-size: 8.9pt;
+        }
+
+        .education-item,
+        .certification-item {
+            margin-bottom: 5px;
+        }
+
+        .item-title {
+            font-weight: bold;
+            font-size: 9.3pt;
+        }
+
+        .muted {
+            color: #555555;
+            font-size: 8.9pt;
+        }
+
+        .two-section {
+            margin-top: 10px;
+        }
+
+        @media print {
+            body {
+                background: #ffffff;
+            }
+
+            .resume {
+                width: 100%;
+                max-width: none;
+                min-height: auto;
+                margin: 0;
+                padding: 0;
+            }
+
+            a {
+                color: #222222;
+                text-decoration: none;
+            }
+
+            section,
+            .job,
+            .project {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
 </head>
 
 <body>
+
 <div class="resume">
 
     <!-- HEADER -->
-    <header class="header">
-        <div class="name">Vignesh M</div>
-        <div class="role">DevOps Engineer</div>
+    <header>
+        <h1>VIGNESH M</h1>
+
+        <div class="headline">
+            DevOps Engineer | SRE | Linux & Cloud Infrastructure | Kubernetes | AI/MLOps
+        </div>
+
         <div class="contact">
-            Tenkasi, Tamil Nadu, India |
-            <a href="mailto:gmailofvignesh@gmail.com">gmailofvignesh@gmail.com</a> |
+            Bengaluru, Karnataka, India |
             +91-9444390688 |
-            <a href="https://www.linkedin.com/in/vky-devops/">linkedin.com/in/vky-devops</a> |
-            <a href="https://github.com/VkyM">github.com/VkyM</a>
-            <a href=" https://vignesh.thalam.net">Portfolio : https://vignesh.thalam.net </a>
+            <a href="mailto:gmailofvignesh@gmail.com">gmailofvignesh@gmail.com</a> |
+            <a href="https://www.linkedin.com/in/vky-devops/">
+                linkedin.com/in/vky-devops
+            </a> |
+            <a href="https://github.com/VkyM">
+                github.com/VkyM
+            </a>
         </div>
     </header>
 
-    <!-- SUMMARY -->
-    <section class="section">
-        <h2 class="section-title">Professional Summary</h2>
+
+    <!-- PROFESSIONAL SUMMARY -->
+    <section>
+        <h2>Professional Summary</h2>
+
         <p class="summary">
-            DevOps and Cloud Engineer with 6 years of hands-on experience in Linux administration,
-            AWS cloud infrastructure, Kubernetes, Docker, Terraform and CI/CD automation.
-            Experienced in deploying and supporting cloud infrastructure, containerized applications,
-            infrastructure as code, monitoring and production environments. Hands-on experience with
-            AWS, Kubernetes, Jenkins, GitHub Actions, Prometheus, Grafana, Terraform, Bash and Python.
+            DevOps Engineer with 3+ years of hands-on experience across cloud infrastructure,
+            Linux systems administration, Kubernetes, Infrastructure as Code, CI/CD automation,
+            observability, and production support. Experienced in AWS, Azure and GCP environments,
+            with practical expertise in Terraform, Docker, Kubernetes, Jenkins, GitHub Actions,
+            Prometheus, Grafana and Loki. Built automation for infrastructure operations,
+            application deployments, cloud monitoring and AI-enabled infrastructure workflows
+            using Python, FastAPI, MCP and Azure OpenAI. Strong focus on reliability, automation,
+            troubleshooting, security, operational efficiency and scalable cloud environments.
         </p>
     </section>
 
-    <!-- SKILLS -->
-    <section class="section">
-        <h2 class="section-title">Technical Skills</h2>
 
-        <div class="skills">
-            <div class="skill-row">
-    <strong>Cloud:</strong> AWS, Azure, E2E, contabo
-</div>
-<div class="skill-row">
-    <strong>Scripting:</strong> Bash, Python, YAML, JSON
-</div>
+    <!-- CORE TECHNICAL SKILLS -->
+    <section>
+        <h2>Core Technical Skills</h2>
 
-<div class="skill-row">
-    <strong>Operating Systems:</strong> Linux, Ubuntu, Red Hat
-</div>
-<div class="skill-row">
-    <strong>Containers:</strong> Docker, Kubernetes, EKS, AKS, k3s, Helm
-</div>
+        <ul class="skills">
 
-<div class="skill-row">
-    <strong>Infrastructure as Code:</strong> Terraform, Ansible
-</div>
+            <li>
+                <strong>Cloud & Infrastructure:</strong>
+                AWS (EC2, EKS, ECR, RDS, S3, IAM, Lambda, VPC, NAT Gateway,
+                Internet Gateway, CloudFront, GameLift, CloudWatch),
+                Azure (Virtual Machines, AKS, ACR, VNet, Azure Monitor, Azure OpenAI),
+                GCP (Compute Engine, Artifact Registry, Cloud Storage, IAM, VPC,
+                Cloud Load Balancing, Cloud CDN), Terraform, Ansible
+            </li>
 
-<div class="skill-row">
-    <strong>CI/CD:</strong> Jenkins, GitHub Actions, Git, Bitbucket.
-</div>
-<div class="skill-row">
-    <strong>Monitoring:</strong> Prometheus, Grafana, Loki, Datadog, Alertmanager, Zabbix, CloudWatch, Azure Monitor
-</div>
-<div class="skill-row">
-    <strong>AWS:</strong> EC2, S3, RDS, IAM, EKS, ECR, Lambda, Load Balancer, VPC, CloudWatch, GameLift
-</div>
+            <li>
+                <strong>Containers & Orchestration:</strong>
+                Docker, Kubernetes, Amazon EKS, Azure AKS, K3s, Helm,
+                NGINX Ingress, Deployments, Services, ConfigMaps, Secrets,
+                Persistent Volumes, PVCs, StorageClasses
+            </li>
 
-<div class="skill-row">
-    <strong>Azure:</strong> Azure DevOps, Virtual Machines, AKS, Azure Container Registry (ACR), Azure Load Balancer, Virtual Network (VNet), Azure Monitor, Azure Pipelines
-</div>
+            <li>
+                <strong>CI/CD & Automation:</strong>
+                Jenkins, GitHub Actions, Azure Pipelines, Git, Bitbucket,
+                Nexus, Terraform, Bash, Python, AWS CLI, YAML, JSON
+            </li>
+
+            <li>
+                <strong>Linux & Systems:</strong>
+                Linux, Ubuntu, Red Hat, RHCSA, System Administration,
+                Bash/Shell Scripting, Production Support, Troubleshooting,
+                Security Hardening, Incident Management, SLA Management, LEMP
+            </li>
+
+            <li>
+                <strong>SRE & Observability:</strong>
+                Prometheus, Grafana, Loki, Alertmanager, CloudWatch,
+                Azure Monitor, Zabbix, LogQL, Metrics Monitoring,
+                Centralized Logging, Incident Response, Reliability Engineering
+            </li>
+
+            <li>
+                <strong>AI / MLOps & AI Infrastructure:</strong>
+                Azure OpenAI, AI Chatbot Integration, Python REST APIs,
+                Model/API Deployment, MCP, AI Agent Infrastructure Integration,
+                Cloud Infrastructure Automation
+            </li>
+
+            <li>
+                <strong>Programming & Scripting:</strong>
+                Python, Bash, Shell Scripting, YAML, JSON, FastAPI,
+                REST APIs, AWS CLI
+            </li>
+
+            <li>
+                <strong>Networking & Security:</strong>
+                DNS, HTTP/HTTPS, Load Balancing, VLAN, DHCP, RADIUS,
+                Firewalls, SAST, DAST, NGINX, Apache, API Management
+            </li>
+
+            <li>
+                <strong>Databases:</strong>
+                MySQL, MariaDB, Amazon RDS, Redis
+            </li>
+
+        </ul>
+    </section>
 
 
-<div class="skill-row">
-    <strong>Networking & Security:</strong> VLAN, DHCP, RADIUS, Subnet, SAST, DAST, hey, Firewall
-</div>
+    <!-- PROFESSIONAL EXPERIENCE -->
+    <section>
+        <h2>Professional Experience</h2>
+
+        <article class="job">
+
+            <div class="job-header">
+                <h3 class="job-title">
+                    DevOps Engineer -
+                    <span class="company">ChainScript Labs</span>
+                    <span class="date">May 2025 - June 2026</span>
+                </h3>
+            </div>
+
+            <ul>
+
+                <li>
+                    <strong>Accelerated cloud environment provisioning</strong>
+                    by developing reusable Terraform modules and implementing
+                    structured Terraform state management for AWS infrastructure.
+                </li>
+
+                <li>
+                    <strong>Automated application delivery</strong>
+                    by engineering Jenkins and GitHub Actions CI/CD pipelines
+                    covering source control, Docker image builds and Kubernetes deployments.
+                </li>
+
+                <li>
+                    <strong>Improved production observability</strong>
+                    by implementing Prometheus, Grafana and Loki monitoring
+                    for infrastructure metrics, application logs, HTTP status codes
+                    and error analysis.
+                </li>
+
+                <li>
+                    <strong>Supported scalable containerized workloads</strong>
+                    by provisioning and managing AWS EKS/K3s environments,
+                    Kubernetes workloads, services, ingress and application scaling.
+                </li>
+
+                <li>
+                    <strong>Automated multiplayer infrastructure operations</strong>
+                    using AWS GameLift fleet management and deployment workflows
+                    for scalable game-server infrastructure.
+                </li>
+
+            </ul>
+
+        </article>
+
+
+        <article class="job">
+
+            <div class="job-header">
+                <h3 class="job-title">
+                    System Administrator -
+                    <span class="company">VisAI Labs (e-con Systems Group)</span>
+                    <span class="date">Mar 2023 - May 2025</span>
+                </h3>
+            </div>
+
+            <ul>
+
+                <li>
+                    <strong>Reduced repetitive support workload by up to 80%</strong>
+                    by designing role-based Jira automation workflows for
+                    recurring operational support activities.
+                </li>
+
+                <li>
+                    <strong>Improved Linux production operations</strong>
+                    by administering enterprise Linux systems and AWS services
+                    including EC2, S3 and RDS.
+                </li>
+
+                <li>
+                    <strong>Automated system administration tasks</strong>
+                    by developing reusable Bash and Python scripts for
+                    infrastructure and operational workflows.
+                </li>
+
+                <li>
+                    <strong>Managed network access across 25 VLANs</strong>
+                    by configuring DHCP reservations, RADIUS authentication
+                    and centralized network access controls.
+                </li>
+
+                <li>
+                    <strong>Strengthened production monitoring</strong>
+                    by implementing AWS CloudWatch monitoring and alerting
+                    to support incident response and SLA management.
+                </li>
+
+            </ul>
+
+        </article>
+
+    </section>
+
+
+    <!-- KEY PROJECTS -->
+    <section>
+        <h2>Key Projects</h2>
+
+        <article class="project">
+
+            <div class="project-title">
+                AWS GameLift Deployment Automation
+            </div>
+
+            <div class="project-tech">
+                <strong>Technologies:</strong>
+                AWS GameLift, AWS CLI, Shell Scripting, DevOps Automation
+            </div>
+
+            <ul>
+                <li>
+                    Automated AWS GameLift fleet provisioning and deployment
+                    workflows for multiplayer server infrastructure.
+                </li>
+
+                <li>
+                    <strong>Reduced deployment cycle time from 15 minutes
+                    to under 2 minutes</strong>, improving testing and deployment
+                    iteration speed.
+                </li>
+            </ul>
+
+        </article>
+
+
+        <article class="project">
+
+            <div class="project-title">
+                Kubernetes Observability & Log Analytics
+            </div>
+
+            <div class="project-tech">
+                <strong>Technologies:</strong>
+                Kubernetes, K3s, NGINX Ingress, Prometheus, Grafana,
+                Loki, LogQL
+            </div>
+
+            <ul>
+                <li>
+                    Implemented centralized Kubernetes metrics and log monitoring
+                    using Prometheus, Grafana and Loki.
+                </li>
+
+                <li>
+                    Built LogQL dashboards for request rates, API latency,
+                    HTTP status codes and backend troubleshooting.
+                </li>
+            </ul>
+
+        </article>
+
+
+        <article class="project">
+
+            <div class="project-title">
+                AWS Infrastructure Automation with MCP
+            </div>
+
+            <div class="project-tech">
+                <strong>Technologies:</strong>
+                AWS EC2, Python, FastAPI, MCP Server, REST APIs
+            </div>
+
+            <ul>
+                <li>
+                    Developed a Python-based Model Context Protocol (MCP)
+                    server to expose AWS infrastructure telemetry to AI agents.
+                </li>
+
+                <li>
+                    Automated real-time EC2 status and resource queries,
+                    connecting cloud infrastructure operations with AI-driven workflows.
+                </li>
+            </ul>
+
+        </article>
+
+
+        <article class="project">
+
+            <div class="project-title">
+                Terraform Infrastructure as Code
+            </div>
+
+            <div class="project-tech">
+                <strong>Technologies:</strong>
+                Terraform, AWS VPC, EC2, EKS, RDS, Git
+            </div>
+
+            <ul>
+                <li>
+                    Developed reusable Terraform modules for AWS VPC,
+                    EC2, EKS and RDS infrastructure.
+                </li>
+
+                <li>
+                    Standardized infrastructure provisioning to reduce
+                    configuration drift and manual provisioning errors.
+                </li>
+            </ul>
+
+        </article>
+
+
+        <article class="project">
+
+            <div class="project-title">
+                Azure OpenAI - Chatbot
+            </div>
+
+            <div class="project-tech">
+                <strong>Technologies:</strong>
+                Azure OpenAI, Python, REST API
+            </div>
+
+            <ul>
+                <li>
+                    Developed a Python-based AI chatbot integrated with
+                    Azure OpenAI for natural-language user interactions.
+                </li>
+
+                <li>
+                    Configured Azure OpenAI model deployment and connected
+                    the application through API-based integration.
+                </li>
+            </ul>
+
+        </article>
+
+    </section>
+
+
+    <!-- EDUCATION -->
+    <section class="two-section">
+        <h2>Education</h2>
+
+        <div class="education-item">
+
+            <div class="item-title">
+                Bachelor of Engineering in Computer Science
+            </div>
+
+            <div class="muted">
+                Government College of Engineering, Bargur
+            </div>
+
+            <div class="muted">
+                2015 - 2018
+            </div>
+
         </div>
     </section>
 
-    <!-- EXPERIENCE -->
-    <section class="section">
-        <h2 class="section-title">Professional Experience</h2>
 
-        <div class="job">
-            <div class="job-header">
-                <div class="job-title">
-                    DevOps Engineer <span class="company">– ChainScript Labs</span>
-                </div>
-                <div class="date">May 2025 – June 2026</div>
+    <!-- CERTIFICATIONS -->
+    <section>
+        <h2>Certifications</h2>
+
+        <div class="certification-item">
+
+            <div class="item-title">
+                Red Hat Certified System Administrator (RHCSA)
             </div>
 
-            <ul class="bullets">
-                <li>Worked on AWS cloud infrastructure and Kubernetes environments for application deployment and operations.</li>
-                <li>Automated infrastructure provisioning and configuration using Terraform and reusable infrastructure modules.</li>
-                <li>Built and maintained CI/CD automation using Jenkins and GitHub-based workflows for application delivery.</li>
-                <li>Worked with Docker and Kubernetes for containerized application deployment, scaling and troubleshooting.</li>
-                <li>Implemented monitoring and observability using Prometheus and Grafana for infrastructure and application metrics.</li>
-                <li>Worked with AWS GameLift services for scalable multiplayer game infrastructure and fleet management.</li>
-            </ul>
-        </div>
-
-        <div class="job">
-            <div class="job-header">
-                <div class="job-title">
-                    System Administrator <span class="company">– VisAI Labs (e-con Systems Group)</span>
-                </div>
-                <div class="date">Mar 2023 – May 2025</div>
+            <div class="muted">
+                Red Hat | 2024 - 2027
             </div>
 
-            <ul class="bullets">
-                <li>Managed Linux infrastructure and AWS services including EC2, S3 and RDS in production environments.</li>
-                <li>Automated administrative and operational tasks using Bash and Python scripting.</li>
-                <li>Implemented backup and disaster recovery processes for infrastructure and application environments.</li>
-                <li>Configured DHCP services across 25 VLANs with RADIUS authentication and network access controls.</li>
-                <li>Implemented monitoring and alerting using AWS CloudWatch and supported production incident troubleshooting.</li>
-                <li>Worked with Linux system administration, networking, security hardening and infrastructure support.</li>
-                <li>Automated role-based Jira workflows, reducing repetitive support tickets by up to 80 percentage.</li>
-            </ul>
         </div>
 
-        <div class="job">
-            <div class="job-header">
-                <div class="job-title">
-                    Support Engineer <span class="company">– CYBERNEXA Infotech</span>
-                </div>
-                <div class="date">Jul 2021 – Aug 2022</div>
+        <div class="certification-item">
+
+            <div class="item-title">
+                Kubernetes for the Absolute Beginners
             </div>
 
-            <ul class="bullets">
-                <li>Provided enterprise Linux administration and technical support for production environments.</li>
-                <li>Developed Bash and C automation scripts to reduce repetitive administrative tasks.</li>
-                <li>Deployed and maintained Zabbix monitoring with custom alerting and infrastructure health checks.</li>
-                <li>Supported secure jump-host configuration, Linux troubleshooting and incident resolution.</li>
-            </ul>
-        </div>
-
-        <div class="job">
-            <div class="job-header">
-                <div class="job-title">
-                    Technical Support Engineer <span class="company">– Sigma Consultants</span>
-                </div>
-                <div class="date">Jul 2019 – Jun 2021</div>
+            <div class="muted">
+                KodeKloud | 2024
             </div>
 
-            <ul class="bullets">
-                <li>Managed Linux systems and supported high-availability infrastructure and production operations.</li>
-                <li>Performed Linux security hardening, troubleshooting, system maintenance and operational support.</li>
-                <li>Developed a PHP application to automate website creation and reduce manual administration work.</li>
-            </ul>
         </div>
-    </section>
-<br>
-    <!-- PROJECTS -->
-    <section class="section">
-        <h2 class="section-title">Key Projects</h2>
 
-        <div class="project">
-    <span class="project-title">AWS Infrastructure & Kubernetes:</span>
-    Designed and managed AWS-based Kubernetes infrastructure using Amazon EKS, Docker and Helm, with automated deployments, monitoring and high-availability configurations.
-</div>
-
-<div class="project">
-    <span class="project-title">CI/CD Automation:</span>
-    Designed CI/CD workflows using Jenkins, GitHub Actions, Docker and Kubernetes for automated application build, containerization and deployment.
-</div>
-
-<div class="project">
-    <span class="project-title">AWS GameLift Infrastructure Automation:</span>
-    Automated AWS GameLift infrastructure provisioning and deployment workflows, reducing deployment time from over 15 minutes to under 2 minutes and significantly improving development and testing efficiency.
-</div>
-
-<div class="project">
-    <span class="project-title">Kubernetes Observability & Log Analytics:</span>
-    Implemented Grafana and Loki-based observability for Kubernetes workloads using LogQL dashboards to analyze application logs, API errors, status codes and backend bottlenecks.
-</div>
-
-<div class="project">
-    <span class="project-title">Kubernetes API Performance Monitoring:</span>
-    Built Grafana dashboards using Loki and LogQL to monitor API-wise latency and identify slow APIs and backend performance bottlenecks in Kubernetes environments.
-</div>
-
-<div class="project">
-    <span class="project-title">AWS Infrastructure Automation with MCP:</span>
-    Developed an AWS MCP server using Python and FastAPI to provide real-time EC2 infrastructure information to AI assistants, enabling automated access to cloud infrastructure data.
-</div>
-
-<div class="project">
-    <span class="project-title">Terraform Infrastructure as Code:</span>
-    Developed modular Terraform configurations to automate AWS infrastructure provisioning, improving infrastructure consistency, repeatability and deployment efficiency.
-</div>
-
-<div class="project">
-    <span class="project-title">Secure VPS Infrastructure:</span>
-    Designed secure and cost-effective VPS infrastructure using Linux and NGINX, isolating database services, restricting public access and implementing controlled network access.
-</div>
-
-<div class="project">
-    <span class="project-title">Linux Server Automation:</span>
-    Automated Linux server provisioning using Bash/Shell scripting and REST APIs, reducing manual configuration effort and enabling consistent, repeatable server deployments.
-</div>
-
-<div class="project">
-    <span class="project-title">Centralized DHCP Management:</span>
-    Implemented a centralized DHCP reservation management solution using a web-based interface for MAC-to-IP reservations, improving network administration and eliminating manual firewall rule updates.
-</div>
-
-<div class="project">
-    <span class="project-title">Centralized Wi-Fi Authentication:</span>
-    Implemented centralized wireless authentication using FreeRADIUS and daloRADIUS with MAC-based authentication to control authorized device access.
-</div>
-
-<div class="project">
-    <span class="project-title">Automated Linux Disk Encryption:</span>
-    Developed Bash automation for Linux disk encryption using LUKS, providing standardized and repeatable security configuration across systems.
-</div>
-
-
-        
     </section>
 
-    <!-- EDUCATION + CERTIFICATIONS -->
-    <section class="section">
-        <div class="two-column">
 
-            <div>
-                <h2 class="section-title">Education</h2>
+    <!-- ADDITIONAL INFORMATION -->
+    <section>
+        <h2>Professional Focus</h2>
 
-                <div class="item">
-                    <div class="item-title">Bachelor of Engineering, Computer Science</div>
-                    <div class="muted">Government College of Engineering Bargur</div>
-                    <div class="muted">2015 – 2018</div>
-                </div>
-            </div>
-
-            <div>
-                <h2 class="section-title">Certifications</h2>
-
-                <div class="item">
-                    <div class="item-title">Red Hat Certified System Administrator (RHCSA)</div>
-                    <div class="muted">Red Hat | 2024–2027</div>
-                </div>
-
-                <div class="item">
-                    <div class="item-title">Kubernetes for the Absolute Beginners</div>
-                    <div class="muted">KodeKloud | 2024</div>
-                </div>
-            </div>
-
-        </div>
+        <p class="summary">
+            DevOps Engineering, Site Reliability Engineering, Cloud Infrastructure,
+            Kubernetes Platform Engineering, Linux Administration, Infrastructure
+            Automation, CI/CD, Observability, Production Support, AI Infrastructure,
+            AI Agent Integration and MLOps-oriented deployment automation.
+        </p>
     </section>
 
 </div>
+
 </body>
 </html>
